@@ -2,7 +2,9 @@
 
 In this app, I have created a CLI app that generates a team of employees in different roles. Use it to keep you company organized and up to date.
 
-Video Link:
+![CLI](./assets/ScreenshotCLI.png?raw=true "Screenshot")
+
+Video Link: https://drive.google.com/file/d/1-s8luImh5OXq0gl-SbvLwSpN5MOFzQAc/view
 
 # Installation
 

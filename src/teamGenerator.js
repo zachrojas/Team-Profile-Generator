@@ -15,10 +15,10 @@ const generateHTML = (answers) =>
           <h1>${answers.username}</h1>
       </header>
       <main>
-        <h2>${answers.location}</h2>
-        <h2>${answers.linkedin}</h2>
+        <h2>${answers.id}</h2>
+        <h2>${answers.email}</h2>
+        <h2>${answers.role}</h2>
         <h2>${answers.github}</h2>
-        <p>${answers.bio}</p>
       </main>
     </body>
     </html>`;
@@ -27,28 +27,28 @@ inquirer
     .prompt([
     {
     type: "input",
-    message: "What is your name?",
+    message: "Employee name",
     name: "username"
     },
     {
     type: "input",
-    message: "Where are you located?",
-    name: "location"
+    message: "Employee ID",
+    name: "id"
     },
     {
     type: "input",
-    message: "What's your LinkedIn?",
-    name: "linkedin"
+    message: "Employee email",
+    name: "email"
     },
     {
     type: "input",
-    message: "What's your GitHub?",
-    name: "github"
+    message: "Employee role",
+    name: "role"
     },
     {
-    type: "input",
-    message: "Tell us about you in two sentences",
-    name: "bio",
+      type: "input",
+      message: "Github username",
+      name: "github"
     }
 ]).then((answers) => {
     const htmlPageContent = generateHTML(answers);
